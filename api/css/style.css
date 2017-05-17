@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-wrapper .header {
+  width: 1170px;
+}
+
+.header-wrapper .header .header-info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.header-wrapper .header .header-info .header-mail,
+.header-wrapper .header .header-info .header-phone {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: 'HarmoniaSansPro';
+  font-size: 12px;
+  color: #34404b;
+}
+
+.header-wrapper .header .header-info .header-mail i,
+.header-wrapper .header .header-info .header-phone i {
+  color: #ff5912;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.header-wrapper .header .header-info .header-link {
+  display: inline-block;
+  float: right;
+}
+
+.header-wrapper .header .header-info .header-link a {
+  color: #34404b;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  margin-right: 18px;
+}
+
+.header-wrapper .header .header-info .header-link a:last-child {
+  margin-right: 0px;
+}
+
+.header-wrapper .header .header-info .header-link a:hover {
+  color: #ff5912;
+}
+
+.header-wrapper .header .header-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper .header-logo {
+  display: inline-block;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper nav {
+  display: inline-block;
+  margin-left: 85px;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper nav ul li:last-child {
+  margin-right: 0px;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper nav ul li a {
+  font-family: 'HarmoniaSansPro';
+  text-decoration: none;
+  font-size: 16px;
+  color: #34404b;
+  -webkit-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.header-wrapper .header .header-nav .nav-wrapper nav ul li a:hover {
+  color: #ff5912;
+}
+
+.header-wrapper .header .header-nav .user-means {
+  display: inline-block;
+  float: right;
+}
+
+.header-wrapper .header .header-nav .user-means a {
+  margin-right: 30px;
+}
+
+.header-wrapper .header .header-nav .user-means a:last-child {
+  margin-right: 0px;
+}
+
+.header-wrapper .header .header-nav .user-means .cart {
+  position: relative;
+}
+
+.header-wrapper .header .header-nav .user-means .cart:before {
+  content: '5';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #34404b;
+  color: white;
+  font-size: 10px;
+  font-family: 'HarmoniaSansPro';
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  top: -22px;
+  left: 3px;
+}

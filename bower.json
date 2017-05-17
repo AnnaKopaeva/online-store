@@ -1,0 +1,20 @@
+{
+  "name": "online-store",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Anna <anna.kopaieva@yandex.ua>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AnnaKopaeva/online-store",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
