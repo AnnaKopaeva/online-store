@@ -1,3 +1,79 @@
+$orange-color: #ff5912
+$font-color: #34404b
+$title-color: #3c4751
+$text-color: #495662
+
+.slider-wrapper
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+	flex: 1 0 auto
+	flex-basis: 100%
+	background-color: #eeeef1
+	background-image: url(../img/background.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 290px 0px
+	.slider
+		width: 1170px
+		margin: 220px 0 220px
+		padding-left: 100px
+		.slider-block
+			h1
+				color: $orange-color
+				font-size: 52px
+				margin-bottom: 30px
+				font-family: 'HarmoniaSansPro'
+				font-weight: 700
+			h3
+				color: $title-color
+				font-size: 18px
+				margin-bottom: 18px
+				font-family: 'HarmoniaSansPro'
+				font-weight: bold
+			p
+				color: $text-color
+				font-size: 16px
+				font-weight: 400
+				margin-bottom: 65px
+				font-family: 'HarmoniaSansPro'
+			span
+				color: $font-color
+				font-size: 18px
+				font-family: 'HarmoniaSansPro'
+				font-weight: 600
+				display: inline-block
+				margin-right: 30px
+			a
+				color: $orange-color
+				font-size: 18px
+				font-family: 'HarmoniaSansPro'
+				font-weight: bold
+				display: inline-block
+				text-decoration: none
+				img
+					display: inline-block
+					margin-right: 10px
+		ul.slick-dots
+			bottom: 0
+			top: 100px
+			left: 0
+			width: auto
+			li
+				display: block
+				width: 10px
+				height: 16px
+				background-color: white
+				margin-bottom: 10px
+				// transition: background-color 2s ease-out
+				&:last-child
+					margin-bottom: 0px
+				button
+					&:before
+						display: none
+			.slick-active
+				height: 36px
+				background-color: $orange-color
 .main-block
 	background-color: #f4f6f8
 	flex-basis: 100%

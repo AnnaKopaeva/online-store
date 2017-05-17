@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .footer-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -298,6 +305,116 @@
   top: -22px;
   left: 3px;
 }
+.slider-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  background-color: #eeeef1;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: 290px 0px;
+}
+
+.slider-wrapper .slider {
+  width: 1170px;
+  margin: 220px 0 220px;
+  padding-left: 100px;
+}
+
+.slider-wrapper .slider .slider-block h1 {
+  color: #ff5912;
+  font-size: 52px;
+  margin-bottom: 30px;
+  font-family: 'HarmoniaSansPro';
+  font-weight: 700;
+}
+
+.slider-wrapper .slider .slider-block h3 {
+  color: #3c4751;
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-family: 'HarmoniaSansPro';
+  font-weight: bold;
+}
+
+.slider-wrapper .slider .slider-block p {
+  color: #495662;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 65px;
+  font-family: 'HarmoniaSansPro';
+}
+
+.slider-wrapper .slider .slider-block span {
+  color: #34404b;
+  font-size: 18px;
+  font-family: 'HarmoniaSansPro';
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.slider-wrapper .slider .slider-block a {
+  color: #ff5912;
+  font-size: 18px;
+  font-family: 'HarmoniaSansPro';
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.slider-wrapper .slider .slider-block a img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.slider-wrapper .slider ul.slick-dots {
+  bottom: 0;
+  top: 100px;
+  left: 0;
+  width: auto;
+}
+
+.slider-wrapper .slider ul.slick-dots li {
+  display: block;
+  width: 10px;
+  height: 16px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.slider-wrapper .slider ul.slick-dots li:last-child {
+  margin-bottom: 0px;
+}
+
+.slider-wrapper .slider ul.slick-dots li button:before {
+  display: none;
+}
+
+.slider-wrapper .slider ul.slick-dots .slick-active {
+  height: 36px;
+  background-color: #ff5912;
+}
+
 .main-block {
   background-color: #f4f6f8;
   -webkit-flex-basis: 100%;
