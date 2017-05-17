@@ -1,36 +1,33 @@
 $orange-color: #ff5912
 $font-color: #34404b
 
-@font-face  
-	font-family: 'HarmoniaSansPro'
-	src: url('../fonts/HarmoniaSansProCyr-Regular.otf')
-	font-weight: 400
-	font-style: normal
- 
 .header-wrapper
-	width: 100%
 	display: flex
 	flex-flow: row wrap
 	justify-content: center
+	flex: 1 0 auto
+	flex-basis: 100%
 	.header
 		width: 1170px
 		.header-info
 			margin-top: 25px
 			margin-bottom: 25px
+			display: flex
+			flex-flow: row wrap
 			.header-mail, .header-phone
-				display: inline-block
 				margin-right: 20px
 				font-family: 'HarmoniaSansPro'
 				font-size: 12px
 				color: $font-color
-				i 
+				flex: 0 1 auto
+				i
 					color: $orange-color
 					font-size: 16px
 					margin-right: 10px
 			.header-link
-				display: inline-block
-				float: right
-				a 
+				flex: 1 1 auto
+				text-align: right
+				a
 					color: $font-color
 					font-size: 16px
 					text-decoration: none
@@ -44,37 +41,33 @@ $font-color: #34404b
 		.header-nav
 			display: flex
 			flex-flow: row wrap
-			justify-content: space-between
+			justify-content: space-around
 			align-items: center
 			margin-top: 44px
 			margin-bottom: 44px
-			.nav-wrapper
-				display: flex
-				flex-flow: row wrap
-				align-items: center
-				.header-logo
-					display: inline-block
-				nav
-					display: inline-block
-					margin-left: 85px
-					ul
-						li
-							list-style: none
-							display: inline-block
-							margin-right: 35px
-							&:last-child
-								margin-right: 0px
-							a
-								font-family: 'HarmoniaSansPro'
-								text-decoration: none
-								font-size: 16px
-								color: $font-color
-								transition: color 0.5s ease-out
-								&:hover
-									color: $orange-color
+			.header-logo
+				flex: 0 1 auto
+			nav
+				flex: 1 1 auto
+				margin-left: 85px
+				ul
+					li
+						list-style: none
+						display: inline-block
+						margin-right: 35px
+						&:last-child
+							margin-right: 0px
+						a
+							font-family: 'HarmoniaSansPro'
+							text-decoration: none
+							font-size: 16px
+							color: $font-color
+							transition: color 0.5s ease-out
+							&:hover
+								color: $orange-color
 			.user-means
-				display: inline-block
-				float: right
+				flex: 0 1 auto
+				text-align: right
 				a
 					margin-right: 30px
 					&:last-child
@@ -96,5 +89,3 @@ $font-color: #34404b
 						position: absolute
 						top: -22px
 						left: 3px
-
-
