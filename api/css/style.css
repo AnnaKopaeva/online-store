@@ -1,3 +1,187 @@
+.main-block {
+  background-color: #f4f6f8;
+  width: 100%;
+}
+
+.main-block .arrivals {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-block .arrivals .wrapper-title {
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
+.main-block .arrivals .wrapper-title h1 {
+  font-family: 'HarmoniaSansPro';
+  font-weight: 700;
+  color: #34404b;
+  margin-bottom: 32px;
+  font-size: 36px;
+}
+
+.main-block .arrivals .wrapper-title h1 span {
+  color: #ff5912;
+}
+
+.main-block .arrivals .wrapper-title p {
+  font-family: 'HarmoniaSansPro';
+  color: #495662;
+  font-size: 16px;
+}
+
+.main-block .arrivals .arrivals-slider {
+  width: 1170px;
+  margin: auto;
+  margin-bottom: 260px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block {
+  width: 270px;
+  margin-top: 120px;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 30px;
+  padding-top: 30px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block:hover .hover-block {
+  display: block;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block img {
+  height: 220px;
+  margin: auto;
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block h3 {
+  font-family: 'HarmoniaSansPro';
+  font-weight: 600;
+  color: #34404b;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .price-product {
+  display: inline-block;
+  font-family: 'HarmoniaSansPro';
+  font-weight: 600;
+  color: #ff5912;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block {
+  position: absolute;
+  display: none;
+  text-align: center;
+  background-color: white;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block img {
+  width: 70px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block h3 {
+  color: #ff5912;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block span {
+  display: inline-block;
+  font-family: 'HarmoniaSansPro';
+  color: #34404b;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .color {
+  margin-bottom: 62px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .color i {
+  font-size: 16px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .color i:nth-child(1) {
+  color: #e12e3f;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .color i:nth-child(2) {
+  color: #34404b;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .color i:nth-child(3) {
+  color: #3ab3ff;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .color i:nth-child(4) {
+  color: #2fd967;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .link-block {
+  margin-bottom: 30px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .link-block i {
+  color: #495662;
+  margin-right: 30px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .link-block i:last-child {
+  margin-right: 0px;
+}
+
+.main-block .arrivals .arrivals-slider .arrivals-block .hover-block .link-block i:hover {
+  color: #ff5912;
+}
+
+.main-block .arrivals .arrivals-slider .slick-dots {
+  height: 60px;
+  line-height: 52px;
+  background-color: white;
+  margin-top: 80px;
+  position: static;
+}
+
+.main-block .arrivals .arrivals-slider .slick-dots button:before {
+  color: #ff5912;
+}
+
+.main-block .arrivals .arrivals-slider .slick-dots li.slick-active button:before {
+  color: #ff5912;
+}
 @font-face {
   font-family: 'HarmoniaSansPro';
   src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
@@ -413,12 +597,4 @@
 .slider-wrapper .slider ul.slick-dots .slick-active {
   height: 36px;
   background-color: #ff5912;
-}
-
-.main-block {
-  background-color: #f4f6f8;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-  height: 500px;
 }

@@ -1,0 +1,121 @@
+$orange-color: #ff5912
+$font-color: #34404b
+$text-color: #495662
+
+.main-block
+	background-color: #f4f6f8
+	width: 100%
+	.arrivals
+		width: 100%
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		.wrapper-title
+			margin: auto
+			text-align: center
+			margin-top: 120px
+			flex-basis: 100%
+			h1
+				font-family: 'HarmoniaSansPro'
+				font-weight: 700
+				color: $font-color
+				margin-bottom: 32px
+				font-size: 36px
+				span
+					color: $orange-color
+			p
+				font-family: 'HarmoniaSansPro'
+				color: $text-color
+				font-size: 16px
+		.arrivals-slider
+			width: 1170px
+			margin: auto
+			margin-bottom: 260px
+			.arrivals-block
+				width: 270px
+				margin-top: 120px
+				background-color: white
+				text-align: center
+				overflow: hidden
+				position: relative
+				display: inline-block
+				cursor: pointer
+				margin-right: 30px
+				padding-top: 30px
+				&:hover
+					.hover-block
+						display: block
+				img
+					height: 220px
+					margin: auto
+					display: inline-block
+					object-fit: cover
+				h3
+					font-family: 'HarmoniaSansPro'
+					font-weight: 600
+					color: $font-color
+					margin-top: 12px
+					margin-bottom: 32px
+					font-size: 18px
+				.price-product
+					display: inline-block
+					font-family: 'HarmoniaSansPro'
+					font-weight: 600
+					color: $orange-color
+					margin-bottom: 28px
+					font-size: 18px
+				.hover-block
+					position: absolute
+					display: none
+					text-align: center
+					background-color: white
+					top: 0
+					left: 0
+					padding-top: 30px
+					width: 100%
+					img
+						width: 70px
+						height: 90px
+						object-fit: cover
+					h3
+						color: $orange-color
+					span
+						display: inline-block
+						font-family: 'HarmoniaSansPro'
+						color: $font-color
+						margin-bottom: 32px
+						font-size: 14px
+					.color
+						margin-bottom: 62px
+						i
+							font-size: 16px
+							&:nth-child(1)
+								color: #e12e3f
+							&:nth-child(2)
+								color: $font-color
+							&:nth-child(3)
+								color: #3ab3ff
+							&:nth-child(4)
+								color: #2fd967
+					.link-block
+						margin-bottom: 30px
+						i
+							color: $text-color
+							margin-right: 30px
+							&:last-child
+								margin-right: 0px
+							&:hover
+								color: $orange-color
+			.slick-dots
+				height: 60px
+				line-height: 52px
+				background-color: white
+				margin-top: 80px
+				position: static
+				button
+					&:before
+						color: $orange-color
+				li.slick-active
+					button
+						&:before
+							color: $orange-color
