@@ -230,7 +230,7 @@
 }
 
 .wrapper-about-product .about-product .product-about-text .wrapper-price-link .link-block a {
-  padding: 20px 24px;
+  padding: 18px 24px;
   text-decoration: none;
   background-color: #ff5912;
   color: white;
@@ -239,6 +239,13 @@
   font-family: 'HarmoniaSansPro';
   font-size: 18px;
   font-weight: 600;
+  -webkit-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.wrapper-about-product .about-product .product-about-text .wrapper-price-link .link-block a:hover {
+  background-color: #f3530f;
 }
 
 .slick-list {
@@ -317,7 +324,8 @@
 }
 
 .arrivals-block,
-.wrapper-related-product .related-product .wrapper-related-block .related-block {
+.wrapper-related-product .related-product .wrapper-related-block .related-block,
+.about-product-block {
   width: 270px;
   margin-top: 120px;
   background-color: white;
@@ -331,12 +339,14 @@
 }
 
 .arrivals-block:hover .hover-block,
-.wrapper-related-product .related-product .wrapper-related-block .related-block:hover .hover-block {
+.wrapper-related-product .related-product .wrapper-related-block .related-block:hover .hover-block,
+.about-product-block:hover .hover-block {
   display: block;
 }
 
 .arrivals-block img,
-.wrapper-related-product .related-product .wrapper-related-block .related-block img {
+.wrapper-related-product .related-product .wrapper-related-block .related-block img,
+.about-product-block img {
   height: 220px;
   margin: auto;
   display: inline-block;
@@ -345,7 +355,8 @@
 }
 
 .arrivals-block h3,
-.wrapper-related-product .related-product .wrapper-related-block .related-block h3 {
+.wrapper-related-product .related-product .wrapper-related-block .related-block h3,
+.about-product-block h3 {
   font-family: 'HarmoniaSansPro';
   font-weight: 600;
   color: #34404b;
@@ -355,7 +366,8 @@
 }
 
 .arrivals-block .price-product,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .price-product {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .price-product,
+.about-product-block .price-product {
   display: inline-block;
   font-family: 'HarmoniaSansPro';
   font-weight: 600;
@@ -365,7 +377,8 @@
 }
 
 .arrivals-block .hover-block,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block,
+.about-product-block .hover-block {
   position: absolute;
   display: none;
   text-align: center;
@@ -377,7 +390,8 @@
 }
 
 .arrivals-block .hover-block img,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block img {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block img,
+.about-product-block .hover-block img {
   width: 70px;
   height: 90px;
   -o-object-fit: cover;
@@ -385,12 +399,14 @@
 }
 
 .arrivals-block .hover-block h3,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block h3 {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block h3,
+.about-product-block .hover-block h3 {
   color: #ff5912;
 }
 
 .arrivals-block .hover-block span,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block span {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block span,
+.about-product-block .hover-block span {
   display: inline-block;
   font-family: 'HarmoniaSansPro';
   color: #34404b;
@@ -399,53 +415,63 @@
 }
 
 .arrivals-block .hover-block .color,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color,
+.about-product-block .hover-block .color {
   margin-bottom: 62px;
 }
 
 .arrivals-block .hover-block .color i,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i,
+.about-product-block .hover-block .color i {
   font-size: 16px;
 }
 
 .arrivals-block .hover-block .color i:nth-child(1),
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(1) {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(1),
+.about-product-block .hover-block .color i:nth-child(1) {
   color: #e12e3f;
 }
 
 .arrivals-block .hover-block .color i:nth-child(2),
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(2) {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(2),
+.about-product-block .hover-block .color i:nth-child(2) {
   color: #34404b;
 }
 
 .arrivals-block .hover-block .color i:nth-child(3),
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(3) {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(3),
+.about-product-block .hover-block .color i:nth-child(3) {
   color: #3ab3ff;
 }
 
 .arrivals-block .hover-block .color i:nth-child(4),
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(4) {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(4),
+.about-product-block .hover-block .color i:nth-child(4) {
   color: #2fd967;
 }
 
 .arrivals-block .hover-block .link-block,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block,
+.about-product-block .hover-block .link-block {
   margin-bottom: 30px;
 }
 
 .arrivals-block .hover-block .link-block i,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block i {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block i,
+.about-product-block .hover-block .link-block i {
   color: #495662;
   margin-right: 30px;
 }
 
 .arrivals-block .hover-block .link-block i:last-child,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block i:last-child {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block i:last-child,
+.about-product-block .hover-block .link-block i:last-child {
   margin-right: 0px;
 }
 
 .arrivals-block .hover-block .link-block i:hover,
-.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block i:hover {
+.wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .link-block i:hover,
+.about-product-block .hover-block .link-block i:hover {
   color: #ff5912;
 }
 
@@ -870,6 +896,241 @@
 
 .join-us .wrapper-join-us a:hover {
   background-color: #f3530f;
+}
+.wrapper-products {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f4f6f8;
+}
+
+.wrapper-products .main-section-products {
+  width: 1170px;
+  margin-top: 120px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .categories,
+.wrapper-products .main-section-products .categories-wrapper .filtter,
+.wrapper-products .main-section-products .categories-wrapper .sizes,
+.wrapper-products .main-section-products .categories-wrapper .brands {
+  padding-left: 40px;
+  background-color: white;
+  width: 270px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .categories h2,
+.wrapper-products .main-section-products .categories-wrapper .filtter h2,
+.wrapper-products .main-section-products .categories-wrapper .sizes h2,
+.wrapper-products .main-section-products .categories-wrapper .brands h2 {
+  font-family: 'HarmoniaSansProBlack';
+  color: #ff5912;
+  font-size: 18px;
+  margin-top: 44px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .categories ul,
+.wrapper-products .main-section-products .categories-wrapper .filtter ul,
+.wrapper-products .main-section-products .categories-wrapper .sizes ul,
+.wrapper-products .main-section-products .categories-wrapper .brands ul {
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .categories ul li,
+.wrapper-products .main-section-products .categories-wrapper .filtter ul li,
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li {
+  font-family: 'HarmoniaSansPro';
+  font-weight: 600;
+  color: #34404b;
+  margin-bottom: 38px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .categories ul li:last-child,
+.wrapper-products .main-section-products .categories-wrapper .filtter ul li:last-child,
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li:last-child,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .categories ul li:hover,
+.wrapper-products .main-section-products .categories-wrapper .filtter ul li:hover,
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li:hover,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li:hover {
+  color: #ff5912;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .filtter {
+  padding-bottom: 38px;
+  margin-bottom: 30px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .filtter .price-numb {
+  display: inline-block;
+  font-family: 'HarmoniaSansPro';
+  font-weight: 600;
+  color: #34404b;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .filtter .number {
+  width: 45px;
+  height: 25px;
+  border: none;
+  outline: none;
+  background-color: #edf0f2;
+  font-family: 'HarmoniaSansPro';
+  color: #34404b;
+  font-size: 12px;
+  margin-right: 22px;
+  text-align: center;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .filtter .number:last-child {
+  margin-right: 0px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li {
+  font-family: 'HarmoniaSansPro';
+  font-weight: 600;
+  color: #34404b;
+  margin-bottom: 38px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li:hover,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li:hover {
+  color: #ff5912;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li:hover .square,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li:hover .square {
+  background-color: transparent;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li:hover .square .small-square,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li:hover .square .small-square {
+  background-color: white;
+  border: 4px solid #ff5912;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li .square,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li .square {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-color: #edf0f2;
+  -webkit-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  margin-right: 14px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes ul li .square .small-square,
+.wrapper-products .main-section-products .categories-wrapper .brands ul li .square .small-square {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  border: 4px solid transparent;
+  -webkit-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  -webkit-transition: border 1s ease-out;
+  -o-transition: border 1s ease-out;
+  transition: border 1s ease-out;
+}
+
+.wrapper-products .main-section-products .block-products {
+  display: inline-block;
+  width: 850px;
+  vertical-align: top;
+  margin-bottom: 120px;
+}
+
+.wrapper-products .main-section-products .block-products .about-product-block {
+  display: inline-block;
+  margin: 0px 10px 12px 0;
+}
+
+.wrapper-products .main-section-products .block-products .about-product-block img {
+  margin-top: 30px;
+}
+
+.wrapper-products .main-section-products .block-products .pagination {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: white;
+  text-align: center;
+}
+
+.wrapper-products .main-section-products .block-products .pagination i {
+  font-size: 10px;
+  color: #ff5912;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+div.ui-widget.ui-widget-content {
+  border: none;
+  height: 3px;
+  background-color: #edf0f2;
+  margin-right: 40px;
+  margin-bottom: 38px;
+}
+
+div.ui-slider-range {
+  background-color: #34404b;
+}
+
+span.ui-slider-handle {
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  outline: none;
+}
+
+span.ui-state-default,
+.ui-widget-content span.ui-state-default {
+  background-color: #34404b;
+  border: none;
+}
+
+.ui-slider-horizontal span.ui-slider-handle {
+  top: -0.5em;
 }
 .sale-info {
   width: 100%;

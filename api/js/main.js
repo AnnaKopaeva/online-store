@@ -28,3 +28,25 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 });
+
+var minValue = 0;
+var maxValue = 1000;
+
+ $( function() {
+  $( "#slider" ).slider({
+      range: true,
+      step: 100,
+      min: minValue,
+      max: maxValue,
+      values: [ minValue, maxValue ],
+      change: function( event, ui ) {
+        
+        var values = $( "#slider" ).slider( "values" );
+        $('.start').val(values[0]);
+        $('.end').val(values[1]);
+      }
+    });
+    $('.start').val(minValue);
+    $('.end').val(maxValue);
+    var range = $( "#slider" ).slider( "option", "range" );  
+  });
