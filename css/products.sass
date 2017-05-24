@@ -1,0 +1,179 @@
+$orange-color: #ff5912
+$font-color: #34404b
+$title-color: #3c4751
+$text-color: #495662
+
+.wrapper-products
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+	background-color: #f4f6f8
+	.main-section-products
+		width: 1170px
+		margin-top: 120px
+		.categories-wrapper
+			display: inline-block
+			vertical-align: top
+			margin-right: 30px
+			.categories, .filtter, .sizes, .brands
+				padding-left: 40px
+				background-color: white
+				width: 270px
+				box-sizing: border-box
+				h2
+					font-family: 'HarmoniaSansProBlack'
+					color: $orange-color
+					font-size: 18px
+					margin-top: 44px
+					margin-bottom: 45px
+					display: inline-block
+				.radio-wrapper
+					padding-bottom: 4px
+					margin-bottom: 30px
+			.categories
+				.radio-wrapper
+					.ui-checkboxradio-radio-label.ui-checkboxradio-checked span.ui-icon, label.ui-checkboxradio-radio-label span.ui-icon-background
+						display: none
+			.filtter
+				padding-bottom: 38px
+				margin-bottom: 30px
+				.price-numb
+					display: inline-block
+					font-family: 'HarmoniaSansPro'
+					font-weight: 600
+					color: $font-color
+					font-size: 14px
+					margin-right: 15px
+				.number
+					width: 45px
+					height: 25px
+					border: none
+					outline: none
+					background-color: #edf0f2
+					font-family: 'HarmoniaSansPro'
+					color: $font-color
+					font-size: 12px
+					margin-right: 22px
+					text-align: center
+					&:last-child
+						margin-right: 0px
+			.sizes, .brands
+				ul
+					li
+						font-family: 'HarmoniaSansPro'
+						font-weight: 600
+						color: $font-color
+						margin-bottom: 38px
+						font-size: 16px
+						cursor: pointer
+						transition: color 0.5s ease-out
+						&:hover
+							color: $orange-color
+							.square
+								background-color: transparent
+								.small-square
+									background-color: white
+									border: 4px solid $orange-color
+
+		.block-products
+			display: inline-block
+			width: 850px
+			vertical-align: top
+			margin-bottom: 120px
+			.about-product-block
+				display: inline-block
+				margin: 0px 10px 38px 0
+				img
+					margin-top: 30px
+			.pagination
+				width: 100%
+				height: 60px
+				line-height: 60px
+				background-color: white
+				text-align: center
+				i
+					font-size: 10px
+					color: $orange-color
+					margin-right: 5px
+					cursor: pointer
+
+div.ui-widget.ui-widget-content
+	border: none
+	height: 3px
+	background-color: #edf0f2
+	margin-right: 40px
+	margin-bottom: 38px
+div.ui-slider-range
+	background-color: $font-color
+span.ui-slider-handle
+	width: 11px
+	height: 11px
+	border-radius: 50%
+	outline: none
+span.ui-state-default, .ui-widget-content span.ui-state-default
+	background-color: $font-color
+	border: none
+.ui-slider-horizontal
+	span.ui-slider-handle
+		top: -0.5em
+
+//radio
+label.ui-corner-all
+	display: block
+
+label.ui-button
+	background: transparent
+	border: 1px solid transparent
+	text-align: left
+	outline: none
+	font-family: 'HarmoniaSansPro'
+	font-weight: 600
+	color: $font-color
+	margin-bottom: 38px
+	padding: 0
+	font-size: 16px
+	cursor: pointer
+	transition: color 0.5s ease-out
+	&:last-child
+		margin-bottom: 0px
+	&:hover
+		background: transparent
+		color: $orange-color
+		font-weight: 600
+		border: 1px solid transparent
+	&:focus
+		background: transparent
+		color: $orange-color
+		font-weight: 600
+		border: 1px solid transparent
+label.ui-state-active
+	background: transparent
+	color: $orange-color
+	font-weight: 600
+	border: 1px solid transparent
+label.ui-button.ui-state-active
+	&:hover
+		background: transparent
+		color: $orange-color
+		font-weight: 600
+		border: 1px solid transparent
+label.ui-visual-focus
+	box-shadow: none
+span.ui-icon
+	width: 13px
+	height: 13px
+	background-color: #edf0f2
+	transition: background-color 1s ease-out
+	margin-right: 14px
+.ui-checkboxradio-radio-label 
+	span.ui-icon-background
+		box-shadow: none
+		border-radius: 0
+.ui-icon-background, .ui-state-active 
+	span.ui-icon-background
+		border-color: $orange-color
+		transition: border-color 0.5s ease-out
+
+
+
