@@ -28,21 +28,13 @@ $text-color: #495662
 					margin-top: 44px
 					margin-bottom: 45px
 					display: inline-block
-				ul
-					padding-bottom: 40px
+				.radio-wrapper
+					padding-bottom: 4px
 					margin-bottom: 30px
-					li
-						font-family: 'HarmoniaSansPro'
-						font-weight: 600
-						color: $font-color
-						margin-bottom: 38px
-						font-size: 16px
-						cursor: pointer
-						transition: color 0.5s ease-out
-						&:last-child
-							margin-bottom: 0px
-						&:hover
-							color: $orange-color
+			.categories
+				.radio-wrapper
+					.ui-checkboxradio-radio-label.ui-checkboxradio-checked span.ui-icon, label.ui-checkboxradio-radio-label span.ui-icon-background
+						display: none
 			.filtter
 				padding-bottom: 38px
 				margin-bottom: 30px
@@ -83,20 +75,7 @@ $text-color: #495662
 								.small-square
 									background-color: white
 									border: 4px solid $orange-color
-						.square
-							width: 13px
-							height: 13px
-							display: inline-block
-							background-color: #edf0f2
-							transition: background-color 1s ease-out
-							margin-right: 14px
-							.small-square
-								width: 5px
-								height: 5px
-								background-color: transparent
-								border: 4px solid transparent
-								transition: background-color 1s ease-out
-								transition: border 1s ease-out
+
 		.block-products
 			display: inline-block
 			width: 850px
@@ -104,7 +83,7 @@ $text-color: #495662
 			margin-bottom: 120px
 			.about-product-block
 				display: inline-block
-				margin: 0px 10px 12px 0
+				margin: 0px 10px 38px 0
 				img
 					margin-top: 30px
 			.pagination
@@ -138,6 +117,63 @@ span.ui-state-default, .ui-widget-content span.ui-state-default
 .ui-slider-horizontal
 	span.ui-slider-handle
 		top: -0.5em
+
+//radio
+label.ui-corner-all
+	display: block
+
+label.ui-button
+	background: transparent
+	border: 1px solid transparent
+	text-align: left
+	outline: none
+	font-family: 'HarmoniaSansPro'
+	font-weight: 600
+	color: $font-color
+	margin-bottom: 38px
+	padding: 0
+	font-size: 16px
+	cursor: pointer
+	transition: color 0.5s ease-out
+	&:last-child
+		margin-bottom: 0px
+	&:hover
+		background: transparent
+		color: $orange-color
+		font-weight: 600
+		border: 1px solid transparent
+	&:focus
+		background: transparent
+		color: $orange-color
+		font-weight: 600
+		border: 1px solid transparent
+label.ui-state-active
+	background: transparent
+	color: $orange-color
+	font-weight: 600
+	border: 1px solid transparent
+label.ui-button.ui-state-active
+	&:hover
+		background: transparent
+		color: $orange-color
+		font-weight: 600
+		border: 1px solid transparent
+label.ui-visual-focus
+	box-shadow: none
+span.ui-icon
+	width: 13px
+	height: 13px
+	background-color: #edf0f2
+	transition: background-color 1s ease-out
+	margin-right: 14px
+.ui-checkboxradio-radio-label 
+	span.ui-icon-background
+		box-shadow: none
+		border-radius: 0
+.ui-icon-background, .ui-state-active 
+	span.ui-icon-background
+		border-color: $orange-color
+		transition: border-color 0.5s ease-out
 
 
 

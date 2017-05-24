@@ -23,16 +23,49 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    dots: true,
+    arrows: true,
     centerMode: true,
     focusOnSelect: true
   });
 });
 
+//number of units
+var plusElement = $('.plus');
+var minusElement = $('.minus');
+var numberElement = $('.choose-quantity').find('.number');
+
+
+plusElement.click(function(){
+  var sVal = numberElement.text();
+  var iNum = parseInt(sVal);
+
+  var iValue = iNum + 1;
+  numberElement.text(iValue);
+});
+
+minusElement.click(function(){
+  var sVal = numberElement.text();
+  var iNum = parseInt(sVal);
+
+  var iValue = iNum - 1;
+  numberElement.text(iValue);
+});
+
+//choose size
+var size = $('.size');
+
+size.click(function(){
+  size.removeClass("active");
+  $(this).addClass("active");
+});
+
+//slider
 var minValue = 0;
 var maxValue = 1000;
 
  $( function() {
+  $( ".radio" ).checkboxradio();
+
   $( "#slider" ).slider({
       range: true,
       step: 100,
@@ -41,7 +74,7 @@ var maxValue = 1000;
       values: [ minValue, maxValue ],
       change: function( event, ui ) {
         
-        var values = $( "#slider" ).slider( "values" );
+        var values = $( "#slider" ).slider("values");
         $('.start').val(values[0]);
         $('.end').val(values[1]);
       }
