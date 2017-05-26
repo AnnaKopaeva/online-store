@@ -1,17 +1,15 @@
-$orange-color: #ff5912
-$font-color: #34404b
-$text-color: #495662
+@import 'fonts'
 
 .wrapper-title
 	margin: auto
 	text-align: center
-	margin-top: 120px
+	margin-top: 115px
 	flex-basis: 100%
 	h1
 		font-family: 'HarmoniaSansPro'
 		font-weight: 700
 		color: $font-color
-		margin-bottom: 32px
+		margin-bottom: 25px
 		font-size: 36px
 		span
 			color: $orange-color
@@ -47,7 +45,7 @@ $text-color: #495662
 						color: $orange-color
 .arrivals-block
 	width: 270px
-	margin-top: 120px
+	margin-top: 82px
 	background-color: white
 	text-align: center
 	overflow: hidden
@@ -68,8 +66,8 @@ $text-color: #495662
 		font-family: 'HarmoniaSansPro'
 		font-weight: 600
 		color: $font-color
-		margin-top: 12px
-		margin-bottom: 32px
+		margin-top: 21px
+		margin-bottom: 28px
 		font-size: 18px
 	.price-product
 		display: inline-block
@@ -93,18 +91,21 @@ $text-color: #495662
 			object-fit: cover
 		h3
 			color: $orange-color
+			margin-top: 28px
 		span
 			display: inline-block
 			font-family: 'HarmoniaSansPro'
 			color: $font-color
 			margin-bottom: 32px
 			font-size: 14px
+			letter-spacing: 0.2em
 		.color
 			margin-bottom: 62px
 			i
 				font-size: 16px
 				&:nth-child(1)
 					color: #e12e3f
+					padding-left: 10px
 				&:nth-child(2)
 					color: $font-color
 				&:nth-child(3)
@@ -130,12 +131,18 @@ $text-color: #495662
 	.related-product
 		width: 1170px
 		margin-bottom: 120px
+		.wrapper-title
+			margin-top: 111px
+			h1
+				font-size: 28px
 		.wrapper-related-block
 			.related-block
 				@extend .arrivals-block
 				display: inline-block
-				margin-right: 18px
+				margin-right: 25px
 				cursor: default
+				&:last-child
+					margin-right: 0px
 				
 .about-product-block
 	@extend .arrivals-block

@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .wrapper-about-product {
   width: 100%;
   display: -webkit-box;
@@ -42,7 +77,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 330px;
-  height: 342px;
+  height: 267px;
   margin-left: -9px;
 }
 
@@ -79,7 +114,7 @@
 .wrapper-about-product .about-product .product-about-text {
   display: inline-block;
   vertical-align: top;
-  margin-left: 82px;
+  margin-left: 62px;
   max-width: 575px;
 }
 
@@ -87,7 +122,8 @@
   font-family: 'HarmoniaSansProBlack';
   color: #ff5912;
   font-size: 52px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  margin-top: -13px;
 }
 
 .wrapper-about-product .about-product .product-about-text h3 {
@@ -95,16 +131,16 @@
   font-weight: 600;
   font-size: 18px;
   color: #3c4751;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 }
 
 .wrapper-about-product .about-product .product-about-text p {
-  max-width: 520px;
+  max-width: 560px;
   font-family: 'HarmoniaSansPro';
   font-size: 16px;
-  line-height: 19px;
+  line-height: 31px;
   color: #495662;
-  margin-bottom: 85px;
+  padding-bottom: 31px;
 }
 
 .wrapper-about-product .about-product .product-about-text .wrapper-size-quantity {
@@ -125,7 +161,9 @@
       -ms-flex-line-pack: center;
           align-content: center;
   border-bottom: 1px solid #edeff1;
-  margin-bottom: 60px;
+  border-top: 1px solid #edeff1;
+  margin-bottom: 57px;
+  padding-top: 34px;
 }
 
 .wrapper-about-product .about-product .product-about-text .wrapper-size-quantity .choose-size {
@@ -133,15 +171,15 @@
   font-size: 18px;
   color: #34404b;
   display: inline-block;
-  margin-bottom: 40px;
 }
 
 .wrapper-about-product .about-product .product-about-text .wrapper-size-quantity .choose-size p {
   display: inline-block;
   font-size: 14px;
-  margin-left: 38px;
+  margin-left: 8px;
   color: #34404b;
   margin-bottom: 0px;
+  letter-spacing: 0.16em;
 }
 
 .wrapper-about-product .about-product .product-about-text .wrapper-size-quantity .choose-size p .size {
@@ -231,7 +269,7 @@
 }
 
 .wrapper-about-product .about-product .product-about-text .wrapper-price-link .link-block a {
-  padding: 16px 22px;
+  padding: 14px 22px;
   text-decoration: none;
   background-color: #ff5912;
   color: white;
@@ -271,10 +309,45 @@
 .slick-next:before {
   color: #ff5912;
 }
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .wrapper-title {
   margin: auto;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 115px;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -284,7 +357,7 @@
   font-family: 'HarmoniaSansPro';
   font-weight: 700;
   color: #34404b;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   font-size: 36px;
 }
 
@@ -346,7 +419,7 @@
 .wrapper-related-product .related-product .wrapper-related-block .related-block,
 .about-product-block {
   width: 270px;
-  margin-top: 120px;
+  margin-top: 82px;
   background-color: white;
   text-align: center;
   overflow: hidden;
@@ -379,8 +452,8 @@
   font-family: 'HarmoniaSansPro';
   font-weight: 600;
   color: #34404b;
-  margin-top: 12px;
-  margin-bottom: 32px;
+  margin-top: 21px;
+  margin-bottom: 28px;
   font-size: 18px;
 }
 
@@ -421,6 +494,7 @@
 .wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block h3,
 .about-product-block .hover-block h3 {
   color: #ff5912;
+  margin-top: 28px;
 }
 
 .arrivals-block .hover-block span,
@@ -431,6 +505,7 @@
   color: #34404b;
   margin-bottom: 32px;
   font-size: 14px;
+  letter-spacing: 0.2em;
 }
 
 .arrivals-block .hover-block .color,
@@ -449,6 +524,7 @@
 .wrapper-related-product .related-product .wrapper-related-block .related-block .hover-block .color i:nth-child(1),
 .about-product-block .hover-block .color i:nth-child(1) {
   color: #e12e3f;
+  padding-left: 10px;
 }
 
 .arrivals-block .hover-block .color i:nth-child(2),
@@ -517,10 +593,22 @@
   margin-bottom: 120px;
 }
 
+.wrapper-related-product .related-product .wrapper-title {
+  margin-top: 111px;
+}
+
+.wrapper-related-product .related-product .wrapper-title h1 {
+  font-size: 28px;
+}
+
 .wrapper-related-product .related-product .wrapper-related-block .related-block {
   display: inline-block;
-  margin-right: 18px;
+  margin-right: 25px;
   cursor: default;
+}
+
+.wrapper-related-product .related-product .wrapper-related-block .related-block:last-child {
+  margin-right: 0px;
 }
 @font-face {
   font-family: 'HarmoniaSansPro';
@@ -610,6 +698,7 @@
 .footer-wrapper .footer nav {
   display: inline-block;
   margin-bottom: 37px;
+  margin-left: 255px;
   width: 625px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -659,6 +748,41 @@
   font-weight: 600;
   margin-bottom: 22px;
 }
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .header-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -687,7 +811,7 @@
 }
 
 .header-wrapper .header .header-info {
-  margin-top: 25px;
+  margin-top: 12px;
   margin-bottom: 25px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -702,7 +826,7 @@
 
 .header-wrapper .header .header-info .header-mail,
 .header-wrapper .header .header-info .header-phone {
-  margin-right: 20px;
+  margin-right: 16px;
   font-family: 'HarmoniaSansPro';
   font-size: 12px;
   color: #34404b;
@@ -716,7 +840,7 @@
 .header-wrapper .header .header-info .header-phone i {
   color: #ff5912;
   font-size: 16px;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .header-wrapper .header .header-info .header-link {
@@ -729,13 +853,13 @@
 
 .header-wrapper .header .header-info .header-link a {
   color: #34404b;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   display: inline-block;
   -webkit-transition: color 0.5s ease-out;
   -o-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
-  margin-right: 18px;
+  margin-right: 11px;
 }
 
 .header-wrapper .header .header-info .header-link a:last-child {
@@ -763,8 +887,8 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 44px;
-  margin-bottom: 44px;
+  margin-top: 63px;
+  margin-bottom: 40px;
 }
 
 .header-wrapper .header .header-nav .header-logo {
@@ -779,7 +903,7 @@
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-left: 85px;
+  margin-left: 82px;
 }
 
 .header-wrapper .header .header-nav nav ul li {
@@ -815,7 +939,7 @@
 }
 
 .header-wrapper .header .header-nav .user-means a {
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .header-wrapper .header .header-nav .user-means a:last-child {
@@ -843,6 +967,41 @@
   top: -22px;
   left: 3px;
 }
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .join-us {
   width: 100%;
   display: -webkit-box;
@@ -871,7 +1030,7 @@
   color: #ff5912;
   font-family: 'HarmoniaSansPro';
   display: inline-block;
-  margin: 55px 25px 55px 60px;
+  margin: 54px 21px 55px 56px;
 }
 
 .join-us .wrapper-join-us p {
@@ -885,7 +1044,7 @@
 .join-us .wrapper-join-us .email {
   display: inline-block;
   margin-left: 250px;
-  margin-right: 160px;
+  margin-right: 153px;
 }
 
 .join-us .wrapper-join-us .email i {
@@ -901,7 +1060,7 @@
 }
 
 .join-us .wrapper-join-us a {
-  padding: 18px 28px;
+  padding: 16px 29px;
   background-color: #ff5912;
   color: white;
   text-decoration: none;
@@ -916,6 +1075,41 @@
 .join-us .wrapper-join-us a:hover {
   background-color: #f3530f;
 }
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .wrapper-products {
   width: 100%;
   display: -webkit-box;
@@ -949,7 +1143,7 @@
 .wrapper-products .main-section-products .categories-wrapper .filtter,
 .wrapper-products .main-section-products .categories-wrapper .sizes,
 .wrapper-products .main-section-products .categories-wrapper .brands {
-  padding-left: 40px;
+  padding-left: 42px;
   background-color: white;
   width: 270px;
   -webkit-box-sizing: border-box;
@@ -963,8 +1157,8 @@
   font-family: 'HarmoniaSansProBlack';
   color: #ff5912;
   font-size: 18px;
-  margin-top: 44px;
-  margin-bottom: 45px;
+  margin-top: 40px;
+  margin-bottom: 38px;
   display: inline-block;
 }
 
@@ -984,6 +1178,10 @@
 .wrapper-products .main-section-products .categories-wrapper .filtter {
   padding-bottom: 38px;
   margin-bottom: 30px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .filtter h2 {
+  margin-bottom: 67px;
 }
 
 .wrapper-products .main-section-products .categories-wrapper .filtter .price-numb {
@@ -1010,6 +1208,11 @@
 
 .wrapper-products .main-section-products .categories-wrapper .filtter .number:last-child {
   margin-right: 0px;
+}
+
+.wrapper-products .main-section-products .categories-wrapper .sizes h2,
+.wrapper-products .main-section-products .categories-wrapper .brands h2 {
+  margin-bottom: 33px;
 }
 
 .wrapper-products .main-section-products .categories-wrapper .sizes ul li,
@@ -1041,6 +1244,11 @@
   border: 4px solid #ff5912;
 }
 
+.wrapper-products .main-section-products .categories-wrapper .brands h2 {
+  margin-bottom: 34px;
+  margin-top: 46px;
+}
+
 .wrapper-products .main-section-products .block-products {
   display: inline-block;
   width: 850px;
@@ -1050,11 +1258,11 @@
 
 .wrapper-products .main-section-products .block-products .about-product-block {
   display: inline-block;
-  margin: 0px 10px 38px 0;
+  margin: 0px 10px 25px 0;
 }
 
-.wrapper-products .main-section-products .block-products .about-product-block img {
-  margin-top: 30px;
+.wrapper-products .main-section-products .block-products .about-product-block h3 {
+  margin-left: -9px;
 }
 
 .wrapper-products .main-section-products .block-products .pagination {
@@ -1114,7 +1322,7 @@ label.ui-button {
   font-family: 'HarmoniaSansPro';
   font-weight: 600;
   color: #34404b;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
   padding: 0;
   font-size: 16px;
   cursor: pointer;
@@ -1167,7 +1375,7 @@ span.ui-icon {
   -webkit-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
-  margin-right: 14px;
+  margin-right: 7px;
 }
 
 .ui-checkboxradio-radio-label span.ui-icon-background {
@@ -1184,6 +1392,41 @@ span.ui-icon {
   -o-transition: border-color 0.5s ease-out;
   transition: border-color 0.5s ease-out;
 }
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .sale-info {
   width: 100%;
   display: -webkit-box;
@@ -1221,7 +1464,7 @@ span.ui-icon {
 .sale-info .wrapper-sale-info .sale-block {
   width: 670px;
   background-color: white;
-  margin-bottom: 120px;
+  margin-bottom: 116px;
 }
 
 .sale-info .wrapper-sale-info .sale-block .sales {
@@ -1233,7 +1476,7 @@ span.ui-icon {
 
 .sale-info .wrapper-sale-info .sale-block .title-sale {
   display: inline-block;
-  margin: 30px 75px 30px 60px;
+  margin: 25px 62px 22px 60px;
 }
 
 .sale-info .wrapper-sale-info .sale-block .title-sale h1 {
@@ -1241,7 +1484,7 @@ span.ui-icon {
   color: #34404b;
   font-family: 'HarmoniaSansProBlack';
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .sale-info .wrapper-sale-info .sale-block .title-sale h3 {
@@ -1253,7 +1496,11 @@ span.ui-icon {
 .sale-info .wrapper-sale-info .sale-block .cart-sale {
   display: inline-block;
   vertical-align: top;
-  margin-top: 38px;
+  margin-top: 34px;
+}
+
+.sale-info .wrapper-sale-info .sale-block .cart-sale img {
+  margin-right: 10px;
 }
 
 .sale-info .wrapper-sale-info .sale-block .cart-sale span {
@@ -1263,18 +1510,23 @@ span.ui-icon {
   font-weight: 600;
 }
 
+.sale-info .wrapper-sale-info .sale-block .cart-sale span i {
+  margin-left: -8px;
+}
+
 .sale-info .wrapper-sale-info .area {
   width: 470px;
   background-color: white;
-  margin-bottom: 120px;
+  margin-bottom: 116px;
   text-align: center;
+  padding-bottom: 27px;
 }
 
 .sale-info .wrapper-sale-info .area p {
   font-size: 16px;
   font-family: 'HarmoniaSansPro';
   color: #34404b;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   vertical-align: top;
   margin-top: 30px;
 }
@@ -1317,7 +1569,7 @@ span.ui-icon {
   font-family: 'HarmoniaSansProBlack';
   font-weight: 600;
   color: #34404b;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .product-sales .wrapper-product-sales h1 span {
@@ -1346,7 +1598,7 @@ span.ui-icon {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 85px;
+  margin-top: 82px;
   margin-bottom: 120px;
 }
 
@@ -1370,7 +1622,7 @@ span.ui-icon {
 
 .product-sales .wrapper-product-sales .wrapper-product-blocks .product-block .wrapper-grade {
   display: inline-block;
-  margin: 48px 0 52px 55px;
+  margin: 44px 0 46px 55px;
   text-align: left;
 }
 
@@ -1379,7 +1631,7 @@ span.ui-icon {
   font-family: 'HarmoniaSansPro';
   font-weight: 600;
   color: #34404b;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
 .product-sales .wrapper-product-sales .wrapper-product-blocks .product-block .wrapper-grade .wrapper-show {
@@ -1388,12 +1640,13 @@ span.ui-icon {
 
 .product-sales .wrapper-product-sales .wrapper-product-blocks .product-block .wrapper-grade .wrapper-show .grade {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 68px;
 }
 
 .product-sales .wrapper-product-sales .wrapper-product-blocks .product-block .wrapper-grade .wrapper-show .grade i {
   color: #ff5912;
   display: inline-block;
+  font-size: 12px;
 }
 
 .product-sales .wrapper-product-sales .wrapper-product-blocks .product-block .wrapper-grade .wrapper-show .grade i:last-child {
@@ -1416,6 +1669,7 @@ span.ui-icon {
   vertical-align: top;
   display: inline-block;
   margin-top: 0px;
+  margin-left: 26px;
 }
 
 .product-sales .wrapper-product-sales .wrapper-product-blocks .product-block .wrapper-grade .hover-blok-sale span {
@@ -1426,6 +1680,41 @@ span.ui-icon {
   font-weight: 600;
   color: #ff5912;
 }
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansPro';
+  src: url("../fonts/HarmoniaSansProCyr-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProBlack';
+  src: url("../fonts/HarmoniaSansProCyr-Black.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .slider-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1457,14 +1746,14 @@ span.ui-icon {
 
 .slider-wrapper .slider {
   width: 1170px;
-  margin: 220px 0 220px;
+  margin: 218px 0 230px;
   padding-left: 100px;
 }
 
 .slider-wrapper .slider .slider-block h1 {
   color: #ff5912;
   font-size: 52px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   font-family: 'HarmoniaSansPro';
   font-weight: 700;
 }
@@ -1472,7 +1761,7 @@ span.ui-icon {
 .slider-wrapper .slider .slider-block h3 {
   color: #3c4751;
   font-size: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-family: 'HarmoniaSansPro';
   font-weight: bold;
 }
@@ -1481,7 +1770,7 @@ span.ui-icon {
   color: #495662;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 65px;
+  margin-bottom: 62px;
   font-family: 'HarmoniaSansPro';
 }
 
@@ -1491,7 +1780,7 @@ span.ui-icon {
   font-family: 'HarmoniaSansPro';
   font-weight: 600;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 23px;
 }
 
 .slider-wrapper .slider .slider-block a {
@@ -1510,8 +1799,8 @@ span.ui-icon {
 
 .slider-wrapper .slider ul.slick-dots {
   bottom: 0;
-  top: 100px;
-  left: 0;
+  top: 57px;
+  left: -4px;
   width: auto;
 }
 
