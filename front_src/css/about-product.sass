@@ -1,0 +1,164 @@
+@import 'fonts'
+
+.wrapper-about-product
+    width: 100%
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    .about-product
+        width: 1000px
+        margin-top: 104px
+        .slider-product
+            width: 330px
+            display: inline-block
+            // overflow: hidden
+            .slider-for__item 
+                display: inline-block
+                margin: 0 10px
+            .slider-for
+                width: 100%
+                .slider-for__item
+                    outline: none
+                    img
+                        object-fit: cover
+                        width: 330px
+                        height: 267px
+                        margin-left: -9px
+            .slider-nav
+                margin-top: 70px
+                .item-nav
+                    height: 70px
+                    display: inline-block
+                    outline: none
+                    .background
+                        width: 100%
+                        height: 100%
+                        background-color: $orange-color
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: opacity 0.5s ease-out
+                        &:hover
+                            opacity: 0.2
+        .product-about-text
+            display: inline-block
+            vertical-align: top
+            margin-left: 62px
+            max-width: 575px
+            h1
+                font-family: 'HarmoniaSansProBlack'
+                color: $orange-color
+                font-size: 52px
+                margin-bottom: 22px
+                margin-top: -13px
+            h3
+                font-family: 'HarmoniaSansPro'
+                font-weight: 600
+                font-size: 18px
+                color: $title-color
+                margin-bottom: 31px
+            p
+                max-width: 560px
+                font-family: 'HarmoniaSansPro'
+                font-size: 16px
+                line-height: 31px
+                color: $text-color
+                padding-bottom: 31px
+            .wrapper-size-quantity
+                display: flex
+                flex-flow: row wrap
+                justify-content: space-between
+                align-content: center
+                border-bottom: 1px solid #edeff1
+                border-top: 1px solid #edeff1
+                margin-bottom: 57px
+                padding-top: 34px
+                .choose-size
+                    font-family: 'HarmoniaSansPro'
+                    font-size: 18px
+                    color: $font-color
+                    display: inline-block
+                    span
+                    p
+                        display: inline-block
+                        font-size: 14px
+                        margin-left: 8px
+                        color: $font-color
+                        margin-bottom: 0px
+                        letter-spacing: 0.16em
+                        .size
+                            transition: color 0.5s ease-out
+                            cursor: pointer
+                            &:hover
+                                font-size: 18px
+                                color: $orange-color
+                        .active
+                            font-size: 18px
+                            color: $orange-color
+                .choose-quantity
+                    display: inline-block
+                    font-family: 'HarmoniaSansPro'
+                    font-size: 18px
+                    color: $font-color
+                    margin-bottom: 40px
+                    span
+                        margin-right: 20px
+
+                    .plus
+                        margin-right: 15px
+                        cursor: pointer
+                        display: inline-block
+                    .number
+                        color: $orange-color
+                        margin-right: 0px
+                        display: inline-block
+                    .minus
+                        cursor: pointer
+                        display: inline-block
+                        margin-left: 15px
+            .wrapper-price-link
+                display: flex
+                flex-flow: row wrap
+                justify-content: space-between
+                margin-bottom: 140px
+                .price
+                    display: inline-block
+                    font-family: 'HarmoniaSansProBlack'
+                    color: $font-color
+                    font-size: 20px
+                .link-block
+                    display: inline-block
+                    i
+                        margin-right: 25px
+                        transition: color 0.5s ease-out
+                        &:hover
+                            color: $orange-color
+                    a
+                        padding: 14px 22px
+                        text-decoration: none
+                        background-color: $orange-color
+                        color: white
+                        border-radius: 19px
+                        font-family: 'HarmoniaSansPro'
+                        font-size: 18px
+                        font-weight: 600
+                        transition: background-color 0.5s ease-out
+                        &:hover
+                            background-color: #f3530f
+
+.slick-list 
+    padding-left: 0 !important
+    padding-right: 0 !important
+
+.slick-slide 
+    margin: 0 20px 0 0
+
+.slick-list 
+    margin: 0 -20px 0 0
+
+.slick-prev, .slick-next
+    z-index: 5
+    &:before
+        color: $orange-color
+

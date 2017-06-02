@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: ./
+    command: ls -la
+    ports:
+    - 8000:8000
+    volumes:
+    - ./:/data
