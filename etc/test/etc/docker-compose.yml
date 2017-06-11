@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: ./
+    container_name: aiotest
+    env_file:
+    - ./environment
+    ports:
+    - 8000:8000
+    volumes:
+    - ../:/opt/test

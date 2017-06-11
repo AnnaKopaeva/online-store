@@ -3,8 +3,10 @@ version: '3'
 services:
   web:
     build: ./
-    command: ls -la
+    container_name: aiotest
+    env_file:
+    - ./environment
     ports:
     - 8000:8000
     volumes:
-    - ./:/data
+    - ../:/opt/test

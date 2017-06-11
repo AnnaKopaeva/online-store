@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  aio:
+    extends:
+      file: ./../../../backend/test/etc/docker-compose.yml
+      service: aio
+    env_file:
+    - ./environment
+    build:
+      args:
+        BASE_DIR: /opt/backend/test/
+    volumes:
+    - ../../../backend/test/:/opt/backend/test/

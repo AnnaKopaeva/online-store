@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  aio:
+    build:
+      context: .
+      args:
+        BASE_DIR: /opt/test/
+    container_name: aiotest
+    env_file:
+    - ./environment
+    ports:
+    - 8000:8000
+    volumes:
+    - ../:/opt/test
