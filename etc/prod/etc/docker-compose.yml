@@ -14,3 +14,10 @@ services:
     - ../../../backend/test/:/opt/backend/test/
     ports:
     - 3333:8000
+    command: gunicorn main:app --bind 0.0.0.0:8000 --worker-class aiohttp.worker.GunicornWebWorker
+  nginx:
+    extends:
+      file: ./../../../backend/nginx/etc/docker-compose.yml
+      service: nginx
+    links:
+    - aio:aio

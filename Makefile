@@ -18,18 +18,18 @@ clean:
 	@cd $(TEST_DIR) && $(CLEAN_STR)
 	@cd $(PROD_DIR) && $(CLEAN_STR)
 	@cd $(DEV_DIR) && $(CLEAN_STR)
+
+clean_all:
 	@docker rm $(docker ps -a | awk '{print $1}' | grep "\d")
 	@docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
 
 prod:
-	@cd $(PROD_DIR)
-	@docker-compose build
-	@docker-compose up
+	@make clean
+	@cd $(PROD_DIR) && docker-compose build && docker-compose up
 
 dev:
-	@cd $(DEV_DIR)
-	@docker-compose build
-	@docker-compose up
+	@make clean
+	@cd $(DEV_DIR) && docker-compose build && docker-compose up
 
 run:
 	@make dev
