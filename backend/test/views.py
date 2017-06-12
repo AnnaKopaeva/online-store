@@ -1,6 +1,8 @@
 from aiohttp import web
+import os
 
 __all__ = ['index', ]
 
 async def index(request):
-    return web.Response(text="Hello world")
+    mode = os.environ["TEXT"]
+    return web.Response(text=f"Hello world: {mode}")

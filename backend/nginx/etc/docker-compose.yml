@@ -1,12 +1,8 @@
-version: '3'
+version: '2'
 
 services:
-  web:
-    build: ./
-    container_name: aiotest
-    env_file:
-    - ./environment
+  nginx:
+    restart: always
+    build: .
     ports:
-    - 8000:8000
-    volumes:
-    - ../:/opt/test
+      - "5555:80"

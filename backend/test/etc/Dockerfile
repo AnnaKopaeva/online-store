@@ -7,4 +7,4 @@ ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 #ADD ./ $BASE_DIR # uncommit if don't use composer
 
-CMD ["python", "-m", "http.server"]
+CMD ["python", "main.py"]

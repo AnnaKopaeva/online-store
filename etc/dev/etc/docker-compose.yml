@@ -12,3 +12,11 @@ services:
         BASE_DIR: /opt/backend/test/
     volumes:
     - ../../../backend/test/:/opt/backend/test/
+    ports:
+    - 3333:8000
+  nginx:
+    extends:
+      file: ./../../../backend/nginx/etc/docker-compose.yml
+      service: nginx
+    links:
+    - aio:aio

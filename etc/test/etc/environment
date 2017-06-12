@@ -1,3 +1,5 @@
 # web
 
 BASE_DIR=/opt/test/
+
+TEXT=TEST
