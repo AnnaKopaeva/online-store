@@ -1,0 +1,7 @@
+{
+  "name": "online-store",
+  "description": "Store",
+  "repository": "https://github.com/AnnaKopaeva/online-store",
+  "logo": "https://www.herokucdn.com/deploy/button.svg",
+  "keywords": ["docker", "aiohttp", "js", "python"]
+}
