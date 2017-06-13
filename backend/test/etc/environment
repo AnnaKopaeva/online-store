@@ -1,0 +1,5 @@
+# aio
+
+BASE_DIR=/opt/test/
+
+TEXT=main

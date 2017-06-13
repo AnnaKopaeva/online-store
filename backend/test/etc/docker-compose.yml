@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  aio:
+    restart: always
+    build:
+      context: .
+      args:
+        BASE_DIR: /opt/test/
+    container_name: aiotest
+    env_file:
+    - ./environment
+    ports:
+    - 8000:8000
+    volumes:
+    - ../:/opt/test
+    command: python -m aiohttp.web -H 0.0.0.0 -P 8000 main:init_function
